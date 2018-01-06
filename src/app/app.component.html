@@ -1,0 +1,349 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="hidden-print">
+  <div style="text-align:center">
+    <h1 class="text-uppercase text-primary">
+      <strong> {{content.title}}</strong></h1>
+    <h3 class="text-uppercase ">
+      <strong>{{content.subTitle}}</strong>
+    </h3>
+    <br/>
+    <div align="center">
+      <form [formGroup]="printForm">
+        <div class="col-md-8 col-lg-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="firstname">First Name</label>
+                <input id="firstname" [placeholder]="'Your First Name'" required maxlength="100" class="form-control"
+                       [(ngModel)]="firstName" formControlName="firstName">
+                <div class="text-danger " *ngIf="printForm.controls['firstName'].touched">
+                  <p *ngIf="printForm.controls['firstName'].hasError('required')">
+                    First name is required </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="lastName">Last Name</label>
+                <input id="lastName" [placeholder]="'Your Last Name'" required maxlength="100" class="form-control"
+                       [(ngModel)]="lastName" formControlName="lastName">
+                <div class="text-danger " *ngIf="printForm.controls['lastName'].touched">
+                  <p *ngIf="printForm.controls['lastName'].hasError('required')">
+                    Last Name is required </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="address">Phone Number</label>
+                <input id="phoneNumber" [placeholder]="'Your Phone Number'" required maxlength="100"
+                       class="form-control" [(ngModel)]="phoneNumber" formControlName="phoneNumber">
+                <div class="text-danger " *ngIf="printForm.controls['phoneNumber'].touched">
+                  <p *ngIf="printForm.controls['phoneNumber'].hasError('required')">
+                    Phone Number is required </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="form-group">
+                <label class="control-label" for="address">Address</label>
+                <input id="address" [placeholder]="'Your Address'" required maxlength="100" class="form-control"
+                       [(ngModel)]="address" formControlName="address">
+                <div class="text-danger " *ngIf="printForm.controls['address'].touched">
+                  <p *ngIf="printForm.controls['address'].hasError('required')">
+                    Address is required </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="city">City</label>
+                <input id="city" [placeholder]="'Your City'" required maxlength="100" class="form-control"
+                       [(ngModel)]="city" formControlName="city">
+                <div class="text-danger " *ngIf="printForm.controls['city'].touched">
+                  <p *ngIf="printForm.controls['city'].hasError('required')">
+                    First name is required </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="state">State</label>
+                <select id="state" class="form-control" [(ngModel)]="state" formControlName="state">
+                  <option value="">Please select your state</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="GU">Guam</option>
+                  <option value="MP">Northern Mariana Islands</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="UM">United States Minor Outlying Islands</option>
+                  <option value="VI">Virgin Islands</option>
+                </select>
+                <div class="text-danger " *ngIf="printForm.controls['state'].touched">
+                  <p *ngIf="printForm.controls['state'].hasError('required')">
+                    State is required </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="zip">Zip</label>
+                <input id="zip" [placeholder]="'Your Zip'" required maxlength="100" class="form-control"
+                       [(ngModel)]="zip" formControlName="zip">
+                <div class="text-danger " *ngIf="printForm.controls['zip'].touched">
+                  <p *ngIf="printForm.controls['zip'].hasError('required')">
+                    Zip is required </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="control-label" for="yourstory">Your Story</label>
+                <textarea type="text" class="form-control" rows="10" id="yourstory" maxlength="1000"
+                          [placeholder]="'Enter your story here'"
+                          [(ngModel)]="yourstory" name="yourstory" formControlName="yourstory"></textarea>
+                <div class="text-danger " *ngIf="printForm.controls['yourstory'].touched">
+                  <p *ngIf="printForm.controls['yourstory'].hasError('required')">
+                    Story is required </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12" align="center">
+              <button (click)="showDialog()" [disabled]="!printForm.valid" id="signupSubmit" type="button"
+                      class="btn btn-success">
+                Show Letters
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <br/>
+
+    </div>
+  </div>
+</div>
+<div class="col-md-12" align="center" *ngIf="display" id="overlay">
+  <div class="col-md-12" style="background-color: #fff;max-width:800px;">
+    <div class="hidden-print row" align="center" style="padding:15px;">
+      <br/>
+      <div class="col-md-6">
+        <button (click)="onPrint()" class="btn btn-success" title="Print">Print</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-warning" (click)="onClose()">Close</button>
+      </div>
+      <br/><br/>
+    </div>
+    <div align="left" *ngIf="recepients != null">
+      <div style="font-size:12px;color:#333;page-break-after:always;"
+           *ngFor="let recepient of recepients[state]; let recepientIndex = index">
+        {{today | date:'fullDate'}}
+        <div align="right">
+          <strong>{{firstName + ' ' + lastName}}</strong>
+          <br/>
+          {{address}}
+          <br/>
+          {{city+', '+ state +' '+ zip}}<br/>
+          Ph: {{phoneNumber}}
+        </div>
+        <strong>{{content.subject}}</strong>
+        <br/>
+        {{recepient.title}}<br/>
+        {{recepient.address}}<br/>
+        {{recepient.city+', '+ recepient.state +' '+ recepient.zip}}<br/>
+        <br/>
+        Dear {{recepient.name}},
+        <br/>
+        <br/>
+        <p>{{yourstory}}</p>
+        <p>{{content.paragraph1}}</p>
+        <p>{{content.paragraph2}}</p>
+        <p>{{content.paragraph3}}</p>
+        <p>{{content.paragraph4}} <strong>{{content.note}}</strong></p>
+
+        Best regards,
+        <br/><br/><br/>
+        <strong>{{firstName + ' ' + lastName}}</strong>
+        <br/>
+
+        <div class="hidden-print">
+          <br/>
+          <br/>
+          <hr/>
+          <br/>
+          <br/>
+        </div>
+      </div>
+
+      <div style="font-size:12px;color:#333;page-break-after: always;"
+           *ngFor="let recepient of recepients.NATIONAL; let recepientIndex = index">
+        {{today | date:'fullDate'}}
+        <div align="right">
+          <strong>{{firstName + ' ' + lastName}}</strong>
+          <br/>
+          {{address}}
+          <br/>
+          {{city+', '+ state +' '+ zip}}<br/>
+          Ph:{{phoneNumber}}
+        </div>
+
+        <strong>{{content.subject}}</strong>
+        <br/>
+        {{recepient.title}}<br/>
+        {{recepient.address}}<br/>
+        {{recepient.city+', '+ recepient.state +' '+ recepient.zip}}<br/>
+        <br/>
+        Dear {{recepient.name}},
+        <br/>
+        <br/>
+        <p>{{yourstory}}</p>
+        <p>{{content.paragraph1}}</p>
+        <p>{{content.paragraph2}}</p>
+        <p>{{content.paragraph3}}</p>
+        <p>{{content.paragraph4}}<strong>{{content.note}}</strong></p>
+
+        Best regards,
+        <br/><br/><br/>
+        <strong>{{firstName + ' ' + lastName}}</strong>
+        <div class="hidden-print">
+          <br/>
+          <br/>
+          <hr/>
+          <br/>
+          <br/>
+        </div>
+      </div>
+      <br/>
+      <div class="row" style="font-size:12px;color:#333;page-break-after: always;">
+
+        <div class="col-sm-4" *ngFor="let recepient of recepients[state]; let recepientIndex = index">
+          <br/>
+          <strong>{{recepient.title}}</strong><br/>
+          {{recepient.address}}<br/>
+          {{recepient.city+', '+ recepient.state +' '+ recepient.zip}}<br/>
+          <br/>
+        </div>
+
+        <div class="col-sm-4" *ngFor="let recepient of recepients.NATIONAL; let recepientIndex = index">
+          <br/>
+          <strong>{{recepient.title}}</strong><br/>
+          {{recepient.address}}<br/>
+          {{recepient.city+', '+ recepient.state +' '+ recepient.zip}}<br/>
+          <br/>
+        </div>
+
+        <div class="col-sm-4" *ngFor="let recepient of recepients[state]; let recepientIndex = index">
+          <br/>
+          <strong>{{firstName + ' ' + lastName}}</strong>
+          <br/>
+          {{address}}
+          <br/>
+          {{city+', '+ state +' '+ zip}}<br/><br/>
+        </div>
+
+        <div class="col-sm-4" *ngFor="let recepient of recepients.NATIONAL; let recepientIndex = index">
+          <br/>
+          <strong>{{firstName + ' ' + lastName}}</strong>
+          <br/>
+          {{address}}
+          <br/>
+          {{city+', '+ state +' '+ zip}}<br/><br/>
+        </div>
+      </div>
+
+      <div class="hidden-print">
+        <br/>
+        <br/>
+        <hr/>
+        <br/>
+        <br/>
+      </div>
+      <br>
+      <div class="row" style="font-size:12px;color:#333;page-break-after: always;">
+        <h4><strong>Email addresses in case you want to send emails</strong></h4>
+        <div class="col-sm-4" *ngFor="let recepient of recepients[state]; let recepientIndex = index">
+          <br/>
+          <strong>{{recepient.title}}</strong><br/>
+          {{recepient.email}}<br/>
+          <br/>
+        </div>
+        <div class="col-sm-4" *ngFor="let recepient of recepients.NATIONAL; let recepientIndex = index">
+          <br/>
+          <strong>{{recepient.title}}</strong><br/>
+          {{recepient.email}}<br/>
+          <br/>
+        </div>
+      </div>
+      <div class="hidden-print row" align="center" style="padding:15px;">
+        <br/>
+        <div class="col-md-6">
+          <button (click)="onPrint()" class="btn btn-success" title="Print">Print</button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-warning" (click)="onClose()">Close</button>
+        </div>
+        <br/><br/>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  overflow-y: scroll;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+@media print {
+  #overlay {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow-y: visible;
+    top:0px;
+    bottom:0px;
+  }
+}
