@@ -1,0 +1,91 @@
+{
+"FL":[{
+"email":"tbteditors@tampabay.com",
+"address":"1000 N Ashley Drive, 7th floor",
+"city":"Tampa",
+"zip":"33602",
+  "state":"FL",
+"title":"Times Publishing Co.(www.tampabay.com)",
+  "name":"editor"
+},
+
+{
+"email":"insight@orlandosentinel.com",
+"address":"633 N Orange Ave",
+"city":"Orlando",
+"zip":"32801",
+  "state":"FL",
+"title":"Orlando Sentinel",
+  "name":"editor"
+}
+,
+  {
+    "email":"letters@sun-sentinel.com",
+    "address":"6501 Nob Hill Rd",
+    "city":"Tamarac",
+    "zip":"33321",
+    "state":"FL",
+    "title":"Sun Sentinel",
+    "name":"editor"
+  }
+
+,
+  {
+    "email":"letters@pbpost.com",
+    "address":"2751 S. Dixie Highway",
+    "city":"West Palm Beach",
+    "zip":"33405",
+    "state":"FL",
+    "title":"COX MEDIA GROUP (PalmBeachPost.com)",
+    "name":"editor"
+
+  }
+
+,
+  {
+    "email":"advocate@heraldtribune.com",
+    "address":"1777 Main St",
+    "city":"Sarasota",
+    "zip":"34236",
+    "state":"FL",
+    "title":"Herald Tribune",
+    "name":"editor"
+  }
+
+,
+  {
+    "email":"letters@news-jrnl.com",
+    "address":"901 6th Street",
+    "city":"Daytona Beach",
+    "zip":"32117",
+    "state":"FL",
+    "title":"GateHouse Media, LLC (News-JournalOnline.com)",
+    "name":"editor"
+  }
+
+,
+  {
+    "email":"letters@jacksonville.com",
+    "address":"P.O. Box 1949",
+    "city":"Jacksonville",
+    "zip":"32231",
+    "state":"FL",
+    "title":"Jacksonville News, Sports and Entertainment (jacksonville.com)",
+    "name":"editor"
+  }
+,
+  {
+    "email":"letters@thevillagesmedia.com",
+    "address":"1100 Main Street",
+    "city":"The Villages",
+    "zip":"32159",
+    "state":"FL",
+    "title":"The Villages Daily Sun",
+    "name":"editor"
+  }
+
+
+],
+  "NATIONAL":[
+  ]
+}
