@@ -10,10 +10,10 @@ http://fairnessthroughawareness.s3-website-us-east-1.amazonaws.com/
 ## To deploy the application directly
 Drop contents of dist folder in any html/web server web root folder or specific folder 
 
-##To Customize title, subtitle and content of letter
+##To customize title, subtitle and content of website
 Modify /asssets/content.json under dist folder
 
-##To Customize recepients specific to state and nation
+##To customize recepients specific to state and nation
 Modify /asssets/recepients.json under dist folder
 
 ##To modify background image
