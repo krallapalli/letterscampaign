@@ -1,6 +1,6 @@
-# LettersCampaign
+# Letters Campaign
 
-Letters campaign application can be used to print campaign letters for any type of campaign. It's a static website uses javascript to generate and print letters. It's easy to use and customizable for any campaign. You can have state specific campaigns and national level campaigns too.
+This application can be used to generate and print campaign letters. It's a static website and uses javascript. It's easy to use and customizable for any campaign. You can have state specific letters and national level letters. The app uses users state to identify the recepients.
 Just deploy the application on S3 or any web server and share the link.
   
 Here is a working example.
