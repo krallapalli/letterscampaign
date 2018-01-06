@@ -1,6 +1,6 @@
 # Letters Campaign
 
-This application can be used to generate and print campaign letters. It's a static website and uses javascript. It's easy to use and customizable for any campaign. You can have state specific letters and national level letters. The app uses users state to identify the recepients.
+This application can be used to generate and print campaign letters. It's a static website and uses javascript. It's easy to use and customizable for any campaign. You can have state specific letters and national level letters. The app uses users state to identify the recepients. Letters are generated for both state and nation level for every one.
 Just deploy the application on S3 or any web server and share the link.
   
 Here is a working example.
@@ -10,11 +10,9 @@ http://fairnessthroughawareness.s3-website-us-east-1.amazonaws.com/
 ## To deploy the application directly
 Drop contents of dist folder in any html/web server web root folder or specific folder 
 
-##To customize title, subtitle and content of website
-Modify /asssets/content.json under dist folder
+##To customize title, subtitle and content of website, Modify /asssets/content.json under dist folder
 
-##To customize recepients specific to state and nation
-Modify /asssets/recepients.json under dist folder
+##To customize recepients specific to state and nation, Modify /asssets/recepients.json under dist folder
 
 ##To modify background image
 Replace /asssets/img/bg.jpg with the choice of your image
